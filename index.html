@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xi Jiang Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/cat.png" alt="">
+            </div>
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button> -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I am <strong>Xi Jiang</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro"> Software Dev
+                </p>
+                <img src="img/cat.gif" alt="a picture of Jane Smith smiling" class="intro__img">
+            </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">My Interests</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>I have been able to write code in Python/Java/Javascript both front-end/back-end 
+                       efficiently with Agile Methodology as well as database management and web frameworks.
+                </p>
+                </div> <!-- / service -->
+                <div class="service">
+                    <h3>Pixel Art</h3>
+                    <p>I am a big fan of pixel art, all the art works on this website are by my own
+                       hands and I try to integrate my works with game development, those parts will be 
+                       updated later after the job seeking period.
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Indie Games</h3>
+                    <p>
+                        Currently I am working on my own individual 2D platform game learning C# and unity.
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+
+            <img src="img/myStack_re.png" alt="a picture of Jane Smith smiling" class="service__img">
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Current Status</h2>
+           <p class="section__subtitle section__subtitle--about">Software developer seeking jobs in Dublin</p>
+           
+           <div class="about-me__body">
+               <p>As a graduate student who recently completed my MSc courses and got extensive
+                academic training in software programming at UCD. By September 2021 my visa will 
+                be changed from Stamp 2 to Stamp 1G.
+            </p>
+           </div>
+           
+           <img src="img/procorosso_cut.gif" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="nobel.html" class="portfolio__item">
+                    <img src="img/nobel.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="Dublin_Bus.html" class="portfolio__item">
+                    <img src="img/Dublin_Bus.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="account.html" class="portfolio__item">
+                    <img src="img/account.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="android_app.html" class="portfolio__item">
+                    <img src="img/Android_app.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:xi.jiang@ucdconnect.ie" class="footer__link">xi.jiang@ucdconnect.ie</a>
+            <a class="social-list__link" href="https://github.com/Ruby-Jiang"><i class="fab fa-github"></i>
+        </footer>
+
+
+        <!-- back-up button -->
+        
+        
+        <script src="js/index.js"></script>
+
+        <!-- three.js effect --> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="js/effect.js"></script>
+    </body>
+</html>
