@@ -66,10 +66,10 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
-:focus {
+/* :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
-}
+} */
 
 /* Buttons */
 
@@ -88,7 +88,7 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 /* Typography */
@@ -146,7 +146,7 @@ header {
     /* opacity:0.8; */
     justify-content: space-between;
     padding: 1em;
-    z-index:1000;
+    z-index:100;
 }
 
 .logo {
@@ -171,12 +171,30 @@ header {
 
 .nav__link{
     color:#fff;
+    padding: 1rem;
     text-decoration: none;
     font-size: var(--fs--h3);
     font-weight: bold;
     text-transform: uppercase;
     font: 'Poppins', sans-serif;
 }
+
+.nav__link:hover{
+    background:#16e0bd url(pixel.png);
+    transition-delay: 0.4s;
+    /* background-size:100%; */
+    animation: animate 0.4s steps(8) forwards;
+}
+
+@keyframes animate{
+    0%{
+        background-position-y:0;
+    }
+    100%{
+        background-position-y:-385px;
+    }
+}
+    
 
 
 /*  Intro section  */
@@ -369,11 +387,12 @@ header {
 
 .footer {
     background: #111;
+    position:relative;
+    bottom: 0;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a { 
@@ -408,6 +427,18 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+
+/* back-up buttom */
+
+.back_up_btn{
+    position: fixed;
+    background:none;
+    bottom: 40px;
+    color:#16e0bd;
+    right: 50px;
+    z-index: 100;
 }
 
 
