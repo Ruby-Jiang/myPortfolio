@@ -6,6 +6,16 @@ navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
 });
 
+navToggle.addEventListener('mouseenter', () => {
+    const hamStroke = document.querySelectorAll('path');
+    hamStroke.forEach(line => line.style.stroke = "#e04516");
+});
+
+navToggle.addEventListener('mouseleave', () => {
+    const hamStroke = document.querySelectorAll('path');
+    hamStroke.forEach(line => line.style.stroke = "#fff");
+});
+
 navCancel.addEventListener('click',() =>{
     document.body.classList.remove('nav-open');
 });
