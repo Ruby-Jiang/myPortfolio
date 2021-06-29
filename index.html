@@ -21,25 +21,47 @@
             <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button> -->
+            
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
+                <div class="grid-container"> 
+                        <span class="open-slide">
+                            <a class="hamburger" href="#" onclick="openSlideMenu()">
+                                <svg width="30" height="30">
+                                    <path d="M0,5 30,5" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,14 30,14" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,23 30,23" stroke = "#fff" stroke-width="5"/>
+                                </svg>
+                            </a>
+                        </span>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-
+        <div class="side-menu">
+            <a href="#" class="close-btn">&times;</a>
+            <ul class="side-list">
+                <li class="side-item"><a href="#" class="side-link">Home</a></li>
+                <li class="side-item"><a href="#services" class="side-link">My services</a></li>
+                <li class="side-item"><a href="#about" class="side-link">About me</a></li>
+                <li class="side-item"><a href="#work" class="side-link">My work</a></li>
+            </ul>
+            
+        </div>
         <!-- Introduction -->
-            <section class="intro" id="home">
-                <h1 class="section__title section__title--intro">
-                    Hi, I am <strong>Xi Jiang</strong>
-                </h1>
-                <p class="section__subtitle section__subtitle--intro"> Software Dev
-                </p>
-                <img src="img/cat.gif" alt="a picture of Jane Smith smiling" class="intro__img">
-            </section>
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Xi Jiang</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> Software Dev
+            </p>
+            <img src="img/cat.gif" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>    
 
         <!-- My services -->
         <section class="my-services" id="services">

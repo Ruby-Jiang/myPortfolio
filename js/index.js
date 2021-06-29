@@ -1,12 +1,17 @@
-// const navToggle = document.querySelector('.nav-toggle');
-// const navLinks = document.querySelectorAll('.nav__link')
+const navToggle = document.querySelector('.hamburger');
+const navCancel = document.querySelector('.close-btn');
+const navLinks = document.querySelectorAll('.side-link');
 
-// navToggle.addEventListener('click', () => {
-//     document.body.classList.toggle('nav-open');
-// });
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
 
-// navLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//         document.body.classList.remove('nav-open');
-//     })
-// })
+navCancel.addEventListener('click',() =>{
+    document.body.classList.remove('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click',() => {
+        document.body.classList.remove('nav-open');
+    })
+});
