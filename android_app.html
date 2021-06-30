@@ -18,33 +18,102 @@
             <div class="logo">
                 <img src="img/cat.png" alt="">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
-            </button>
+            </button> -->
+            
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-                </ul>
+                <div class="grid-container"> 
+                        <span class="open-slide">
+                            <a class="hamburger" href="#">
+                                <svg width="30" height="30">
+                                    <path d="M0,5 30,5" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,14 30,14" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,23 30,23" stroke = "#fff" stroke-width="5"/>
+                                </svg>
+                            </a>
+                        </span>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <div class="side-menu">
+            <a href="#" class="close-btn">&times;</a>
+            <ul class="side-list">
+                <li class="side-item"><a href="index.html#" class="side-link">Home</a></li>
+                <li class="side-item"><a href="index.html#services" class="side-link">My services</a></li>
+                <li class="side-item"><a href="index.html#about" class="side-link">About me</a></li>
+                <li class="side-item"><a href="index.html#work" class="side-link">My work</a></li>
+            </ul>
+            
+        </div>
         
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                Query Of<strong>Nobel Prize</strong>
+                Scanner of<strong>Refriginator</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Javascript Demo</p>
-            <!-- <img src="img/nobel.png" alt="" class="intro__img"> -->
+            <p class="section__subtitle section__subtitle--intro">Simple Android Practice</p>
+            <img src="img/Android.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/nobel.png" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>
+                The application seems to be a middleware between the user and the fridge. 
+                Apart from the fridge, the application will also interact with some other 
+                APIs to provide the user with more practical service.
+            </p>
+            <img class="portfolio-item-img" src="img/flow.png" alt="">
+            <h3>
+                Scan Food
+            </h3>
+            <p>
+                The purpose of this feature is to allow the user to scan the barcode tapped 
+                on the item (if any). For expiration date, the users will be asked to input 
+                it manually with a selective drop down menu and the calendar showing the next 
+                14 days. To achieve this feature, the relevant barcode API (world.openfoodfact
+                s.org) is also needed. We query the targeted barcode and get the corresponding 
+                json information file, hence the specific information like food image, weight, 
+                producer, etc can be extracted and loaded into the database. This would give 
+                users the ability to manage their foods in the fridge.
+            </p>
+            <h3>
+                Grocery List  
+            </h3>
+            <p>
+                This feature is simple as for now it just enables users to write down their 
+                grocery list and store it in the local database, so there is no need to use 
+                any API.
+            </p>
+            <h3>
+                Storage Check
+            </h3>
+            <p>
+                After the users scan the items in, the information of these scanned items will 
+                be stored. To provide improved privacy protection and control for customers, the 
+                personal consumer data will not be uploaded to our server but only stored in local. 
+                For this feature, no API needed, only a database will be utilized to store and retrieve 
+                item information.  In the future, we may need to collect and process these data with 
+                machine learning implementation for market and user behavior research purposes.
+            </p>
+            <h3>
+                Search Recipes
+            </h3>
+            <p>
+                This feature provides the users with cooking knowledge to assist them to make good 
+                dishes, and this knowledge is from an outside API ‘Edamam’. Hence this ‘Edamam‘ API 
+                needs to be added into the architecture. 
+            </p>
+            <div class="portfolio-item-div">
+                <img class="portfolio-item-fri" src="img/scanbar.gif" alt="">
+                <img class="portfolio-item-fri" src="img/searchrecipe.gif" alt="">
+            </div>
         </div>
         
         
@@ -55,7 +124,8 @@
             <a class="social-list__link" href="https://github.com/Ruby-Jiang"><i class="fab fa-github"></i>
         </footer>
         
-        
+        <a class="back_up_btn" href="#"><i class="fas fa-caret-square-up fa-3x"></i></a>
+
         <script src="js/index.js"></script>
         
     </body>

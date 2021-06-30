@@ -18,33 +18,73 @@
             <div class="logo">
                 <img src="img/cat.png" alt="">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
-            </button>
+            </button> -->
+            
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-                </ul>
+                <div class="grid-container"> 
+                        <span class="open-slide">
+                            <a class="hamburger" href="#">
+                                <svg width="30" height="30">
+                                    <path d="M0,5 30,5" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,14 30,14" stroke = "#fff" stroke-width="5"/>
+                                    <path d="M0,23 30,23" stroke = "#fff" stroke-width="5"/>
+                                </svg>
+                            </a>
+                        </span>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <div class="side-menu">
+            <a href="#" class="close-btn">&times;</a>
+            <ul class="side-list">
+                <li class="side-item"><a href="index.html#" class="side-link">Home</a></li>
+                <li class="side-item"><a href="index.html#services" class="side-link">My services</a></li>
+                <li class="side-item"><a href="index.html#about" class="side-link">About me</a></li>
+                <li class="side-item"><a href="index.html#work" class="side-link">My work</a></li>
+            </ul>
+            
+        </div>
         
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
                 Query Of<strong>Nobel Prize</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Javascript Demo</p>
-            <!-- <img src="img/nobel.png" alt="" class="intro__img"> -->
+            <p class="section__subtitle section__subtitle--intro">Simple Javascript Demo</p>
+            <img src="img/nobel-title.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/nobel.png" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>
+                This project is currently available on <a class="item-link" href="https://ruby-jiang.github.io/NobelPrizeQuery/">Here</a> 
+                focusing on the use of JavaScript to read, manipulate and present JSON data in a webpage combining with basic HTML and CSS,
+                The data needed for this assignment is included in two files:
+            </p>
+            <p>
+                1. prizesByYear.json – this file provides information on Nobel Prize winners from 1970 to 2018.          
+            </p>
+            <img class="portfolio-item-img" src="img/prizeByYear.png" alt="">
+            <p>
+                2. winnersByID.json – this file provides further information on individual winners, listed by id. 
+            </p>
+
+            <img class="portfolio-item-img" src="img/winnerById.png" alt="">
+
+            <p>
+                By clicking on a winner’s name or a more information button beside them when the corresponding option is clicked the following additional 
+                information for the chosen winner will be displayed: year of birth, year of death (if relevant), city of birth, category of the award or
+                awards received, motivation for each award, and their affiliations. 
+            </p>
+            <img class="portfolio-item-img" src="img/nobel.png" alt="">
         </div>
         
         
@@ -55,7 +95,8 @@
             <a class="social-list__link" href="https://github.com/Ruby-Jiang"><i class="fab fa-github"></i>
         </footer>
         
-        
+        <a class="back_up_btn" href="#"><i class="fas fa-caret-square-up fa-3x"></i></a>
+
         <script src="js/index.js"></script>
         
     </body>
