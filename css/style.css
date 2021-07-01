@@ -253,7 +253,7 @@ header {
 }
 
 .nav-open .side-menu{
-    transform: translateX(60%);
+    transform: translateX(55%);
 }
 
 .close-btn{
